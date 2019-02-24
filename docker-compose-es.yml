@@ -1,0 +1,41 @@
+version: '2.2'
+services:
+  kblab6x1:
+    image: docker.elastic.co/kibana/kibana:6.5.4
+    container_name: kblab6x1
+    environment:
+      SERVER_NAME: kibana.example.org
+      ELASTICSEARCH_URL: http://eslab6x1:9200
+    networks:
+      - esnet
+    ports:
+      - 5601:5601
+  eslab6x1:
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.5.4
+    container_name: eslab6x1
+    environment:
+      - node.name=eslab6x1
+      - cluster.name=lab-cluster
+      - network.host=0.0.0.0
+      - bootstrap.memory_lock=true
+      - xpack.monitoring.collection.enabled=true
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - path.repo=/usr/share/elasticsearch/repo
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - eslab6x1:/usr/share/elasticsearch/data
+      - ./repo:/usr/share/elasticsearch/repo
+    ports:
+      - 9200:9200
+    networks:
+      - esnet
+
+volumes:
+  eslab6x1:
+    driver: local
+
+networks:
+  esnet:
