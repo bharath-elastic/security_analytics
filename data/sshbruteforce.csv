@@ -1,0 +1,15 @@
+client_ip,server,message,user
+183.152.177.160,ip-172-31-27-39,sshd[7629]: Failed password for invalid user admin from 183.152.177.160 port 42107 ssh2,admin
+183.152.177.160,ip-172-31-27-39,sshd[7629]: Invalid user admin from 183.152.177.160,admin
+183.152.177.160,ip-172-31-27-39,sshd[7629]: Failed password for invalid user guest from 183.152.177.160 port 41889 ssh2,guest
+183.152.177.160,ip-172-31-27-39,sshd[7629]: Invalid user guest from 183.152.177.160,guest
+183.152.177.160,ip-172-31-27-39,sshd[7629]: Failed password for invalid user test from 183.152.177.160 port 41797 ssh2,test
+183.152.177.160,ip-172-31-27-39,sshd[7629]: Invalid user test from 183.152.177.160,test
+183.152.177.160,ip-172-31-27-39,sshd[7629]: Failed password for invalid user alias from 183.152.177.160 port 56138 ssh2,alias
+183.152.177.160,ip-172-31-27-39,sshd[7629]: Invalid user alias from 183.152.177.160,alias
+183.152.177.160,ip-172-31-27-39,sshd[7629]: Failed password for invalid user recruit from 183.152.177.160 port 56031 ssh2,recruit
+183.152.177.160,ip-172-31-27-39,sshd[7629]: Invalid user recruit from 183.152.177.160,recruit
+183.152.177.160,ip-172-31-27-39,sshd[7629]: Failed password for invalid user sales from 183.152.177.160 port 55924 ssh2,sales
+183.152.177.160,ip-172-31-27-39,sshd[7629]: Invalid user sales from 183.152.177.160,sales
+183.152.177.160,ip-172-31-27-39,sshd[7629]: Failed password for invalid user staff from 183.152.177.160 port 55820 ssh2,staff
+183.152.177.160,ip-172-31-27-39,sshd[7629]: Invalid user staff from 183.152.177.160,staff
